@@ -133,6 +133,18 @@ function browserComp() {
     /**
      * babel source lib
      */
+
+    //  add ' "build": "babel src -d lib" ' to the scripts in package.json
+
+    /**
+     * build
+     */
+
+    // now running "npm run build" to use babel for transpiling all ES6 and upwards syntax
+    // into the .lib directory
+
+    // note: it did only transpile .js files, not the other existing ts files.
+    // "npm install --save-dev @babel/preset-typescript" should be needed
 }
 
 browserComp()

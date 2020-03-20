@@ -1,0 +1,30 @@
+{
+	"name": "javascript",
+	"version": "1.0.0",
+	"description": "javaScript exercises",
+	"main": "index.js",
+	"scripts": {
+		"test": "test",
+		"babel-version": "babel --version"
+	},
+	"repository": {
+		"type": "git",
+		"url": "\"https://github.com/AndreasGiersch/javaScript.git\""
+	},
+	"keywords": [
+		"\"exercises\""
+	],
+	"author": "Andreas Giersch <andreasgiersch@web.de>",
+	"license": "ISC",
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.7.0"
+	},
+	"prettier": {
+		"trailingComma": "es5",
+		"tabWidth": 4,
+		"semi": false,
+		"singleQuote": true,
+		"printWidth": 80
+	}
+}

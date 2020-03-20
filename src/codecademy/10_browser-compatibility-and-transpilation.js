@@ -145,6 +145,22 @@ function browserComp() {
 
     // note: it did only transpile .js files, not the other existing ts files.
     // "npm install --save-dev @babel/preset-typescript" should be needed
+
+    /**
+     * review
+     */
+
+    // Initialize your project using npm init and create a directory called src
+    // Install babel dependencies by running
+    // npm install @babel/cli -D
+    // npm install @babel/preset-env -D
+    // Create a .babelrc file inside your project and add the following code inside it:
+    // {
+    //   "presets": ["env"]
+    // }
+    // Add the following script to your scripts object in package.json:
+    // "build": "babel src -d lib"
+    // Run npm run build whenever you want to transpile your code from your src to lib directories.
 }
 
 browserComp()

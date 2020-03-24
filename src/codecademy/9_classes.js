@@ -1,55 +1,55 @@
 /**
- * constructor
+ * 2. constructor
  */
 
 class Surgeon {
-	constructor(name, department) {
-		this.name = name;
-		this.department = department;
-	}
+    constructor(name, department) {
+        this.name = name
+        this.department = department
+    }
 }
 
 /**
- * class instances
+ * 3. class instances
  */
 
-const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
+const surgeonCurry = new Surgeon('Curry', 'Cardiovascular')
 
-const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
+const surgeonDurant = new Surgeon('Durant', 'Orthopedics')
 
 /**
- * methods
+ * 4. methods
  */
 
 class SurgeonWithMethod {
-	constructor(name, department) {
-		this._name = name;
-		this._department = department;
-		this._remainingVacationDays = 20;
-	}
+    constructor(name, department) {
+        this._name = name
+        this._department = department
+        this._remainingVacationDays = 20
+    }
 
-	get name() {
-		return this._name;
-	}
+    get name() {
+        return this._name
+    }
 
-	get department() {
-		return this._department;
-	}
+    get department() {
+        return this._department
+    }
 
-	get remainingVacationDays() {
-		return this._remainingVacationDays;
-	}
+    get remainingVacationDays() {
+        return this._remainingVacationDays
+    }
 
-	takeVacationDays(daysOff) {
-		this._remainingVacationDays = this._remainingVacationDays - daysOff;
-	}
+    takeVacationDays(daysOff) {
+        this._remainingVacationDays = this._remainingVacationDays - daysOff
+    }
 }
 
-const surgeonCurryWM = new SurgeonWithMethod('Curry', 'Cardiovascular');
-const surgeonDurantWM = new SurgeonWithMethod('Durant', 'Orthopedics');
+const surgeonCurryWM = new SurgeonWithMethod('Curry', 'Cardiovascular')
+const surgeonDurantWM = new SurgeonWithMethod('Durant', 'Orthopedics')
 
 /**
- * method calls
+ * 5. method calls
  */
 
 // class Surgeon {
@@ -79,67 +79,67 @@ const surgeonDurantWM = new SurgeonWithMethod('Durant', 'Orthopedics');
 // const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
 // const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
 
-console.log(surgeonCurryWM.name);
-surgeonCurryWM.takeVacationDays(3);
-console.log(surgeonCurryWM.remainingVacationDays);
+console.log(surgeonCurryWM.name)
+surgeonCurryWM.takeVacationDays(3)
+console.log(surgeonCurryWM.remainingVacationDays)
 
 /**
- * inheritance I
+ * 6. inheritance I
  */
 
 class HospitalEmployee {
-	constructor(name) {
-		this._name = name;
-		this._remainingVacationDays = 20;
-	}
+    constructor(name) {
+        this._name = name
+        this._remainingVacationDays = 20
+    }
 
-	get name() {
-		return this._name;
-	}
+    get name() {
+        return this._name
+    }
 
-	get remainingVacationDays() {
-		return this._remainingVacationDays;
-	}
+    get remainingVacationDays() {
+        return this._remainingVacationDays
+    }
 
-	takeVacationDays(daysOff) {
-		this._remainingVacationDays = this._remainingVacationDays - daysOff;
-	}
+    takeVacationDays(daysOff) {
+        this._remainingVacationDays = this._remainingVacationDays - daysOff
+    }
 }
 
 /**
- * inheritance III
+ * 8. inheritance III
  */
 
 class HospitalEmployeeAsParent {
-	constructor(name) {
-		this._name = name;
-		this._remainingVacationDays = 20;
-	}
+    constructor(name) {
+        this._name = name
+        this._remainingVacationDays = 20
+    }
 
-	get name() {
-		return this._name;
-	}
+    get name() {
+        return this._name
+    }
 
-	get remainingVacationDays() {
-		return this._remainingVacationDays;
-	}
+    get remainingVacationDays() {
+        return this._remainingVacationDays
+    }
 
-	takeVacationDays(daysOff) {
-		this._remainingVacationDays -= daysOff;
-	}
+    takeVacationDays(daysOff) {
+        this._remainingVacationDays -= daysOff
+    }
 }
 
 class Nurse extends HospitalEmployeeAsParent {
-	constructor(name, certifications) {
-		super(name);
-		this._certifications = certifications;
-	}
+    constructor(name, certifications) {
+        super(name)
+        this._certifications = certifications
+    }
 }
 
-const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics']);
+const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics'])
 
 /**
- * inheritance IV
+ * 9. inheritance IV
  */
 
 // class HospitalEmployee {
@@ -170,11 +170,11 @@ const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics']);
 
 // const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics']);
 
-nurseOlynyk.takeVacationDays(5);
-console.log(nurseOlynyk.remainingVacationDays);
+nurseOlynyk.takeVacationDays(5)
+console.log(nurseOlynyk.remainingVacationDays)
 
 /**
- * inheritance V
+ * 10. inheritance V
  */
 
 // class HospitalEmployee {
@@ -197,79 +197,79 @@ console.log(nurseOlynyk.remainingVacationDays);
 // }
 
 class NurseWithCerts extends HospitalEmployee {
-	constructor(name, certifications) {
-		super(name);
-		this._certifications = certifications;
-	}
+    constructor(name, certifications) {
+        super(name)
+        this._certifications = certifications
+    }
 
-	get certifications() {
-		return this._certifications;
-	}
+    get certifications() {
+        return this._certifications
+    }
 
-	addCertification(newCertification) {
-		this._certifications.push(newCertification);
-	}
+    addCertification(newCertification) {
+        this._certifications.push(newCertification)
+    }
 }
 
-const nurseOlynykWC = new NurseWithCerts('Olynyk', ['Trauma', 'Pediatrics']);
-nurseOlynykWC.takeVacationDays(5);
-console.log(nurseOlynykWC.remainingVacationDays);
+const nurseOlynykWC = new NurseWithCerts('Olynyk', ['Trauma', 'Pediatrics'])
+nurseOlynykWC.takeVacationDays(5)
+console.log(nurseOlynykWC.remainingVacationDays)
 
-nurseOlynykWC.addCertification('Genetics');
+nurseOlynykWC.addCertification('Genetics')
 
-console.log(nurseOlynykWC.certifications);
+console.log(nurseOlynykWC.certifications)
 
 /**
- * static methods
+ * 11. static methods
  */
 
 class HospitalEmployeeWithStatic {
-	constructor(name) {
-		this._name = name;
-		this._remainingVacationDays = 20;
-	}
+    constructor(name) {
+        this._name = name
+        this._remainingVacationDays = 20
+    }
 
-	get name() {
-		return this._name;
-	}
+    get name() {
+        return this._name
+    }
 
-	get remainingVacationDays() {
-		return this._remainingVacationDays;
-	}
+    get remainingVacationDays() {
+        return this._remainingVacationDays
+    }
 
-	takeVacationDays(daysOff) {
-		this._remainingVacationDays -= daysOff;
-	}
+    takeVacationDays(daysOff) {
+        this._remainingVacationDays -= daysOff
+    }
 
-	static generatePassword() {
-		return Math.ceil(Math.random() * 10000);
-	}
+    static generatePassword() {
+        return Math.ceil(Math.random() * 10000)
+    }
 }
 
 class NurseWithStatic extends HospitalEmployeeWithStatic {
-	constructor(name, certifications) {
-		super(name);
-		this._certifications = certifications;
-	}
+    constructor(name, certifications) {
+        super(name)
+        this._certifications = certifications
+    }
 
-	get certifications() {
-		return this._certifications;
-	}
+    get certifications() {
+        return this._certifications
+    }
 
-	addCertification(newCertification) {
-		this.certifications.push(newCertification);
-	}
+    addCertification(newCertification) {
+        this.certifications.push(newCertification)
+    }
 }
 
-const nurseOlynykWS = new NurseWithStatic('Olynyk', ['Trauma', 'Pediatrics']);
-nurseOlynykWS.takeVacationDays(5);
-console.log(nurseOlynykWS.remainingVacationDays);
-nurseOlynykWS.addCertification('Genetics');
-console.log(nurseOlynykWS.certifications);
-console.log(NurseWithStatic.generatePassword());
+const nurseOlynykWS = new NurseWithStatic('Olynyk', ['Trauma', 'Pediatrics'])
+nurseOlynykWS.takeVacationDays(5)
+console.log(nurseOlynykWS.remainingVacationDays)
+nurseOlynykWS.addCertification('Genetics')
+console.log(nurseOlynykWS.certifications)
+console.log(NurseWithStatic.generatePassword())
 
 /**
- * review
+ * 12. review
  */
 
 // class HospitalEmployee {
@@ -317,20 +317,20 @@ console.log(NurseWithStatic.generatePassword());
 // console.log(nurseOlynyk.certifications);
 
 class Doctor extends HospitalEmployeeWithStatic {
-	constructor(name, insurance) {
-		super(name);
-		this._insurance = insurance;
-	}
+    constructor(name, insurance) {
+        super(name)
+        this._insurance = insurance
+    }
 
-	get insurance() {
-		return this._insurance;
-	}
+    get insurance() {
+        return this._insurance
+    }
 
-	updateInsurance(insurance) {
-		this._insurance = insurance;
-	}
+    updateInsurance(insurance) {
+        this._insurance = insurance
+    }
 }
 
-const doc = new Doctor('P', 'Privat');
-doc.updateInsurance('3');
-console.log(doc.insurance);
+const doc = new Doctor('P', 'Privat')
+doc.updateInsurance('3')
+console.log(doc.insurance)

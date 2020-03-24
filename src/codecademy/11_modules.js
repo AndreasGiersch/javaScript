@@ -1,5 +1,5 @@
 /**
- * export modules
+ * 2. export modules
  */
 
 const Airplane = {}
@@ -11,7 +11,7 @@ Airplane.myAirplane = 'StarJet'
 // module.exports = Airplane
 
 /**
- * export modules II
+ * 4. export modules II
  */
 
 // module.exports = {
@@ -22,7 +22,7 @@ Airplane.myAirplane = 'StarJet'
 // }
 
 /**
- * export defaults
+ * 5. export defaults
  */
 
 let availableAirplanesA = [
@@ -51,7 +51,7 @@ const AirplaneExp = {
 // export default AirplaneExp
 
 /**
- * named exports
+ * 7. named exports
  */
 
 // let flightRequirements = { requiredStaff: 4 }
@@ -67,7 +67,7 @@ const AirplaneExp = {
 // export { availableAirplanes, flightRequirements, meetsStaffRequirements }
 
 /**
- * export named exports as soon as they are declared
+ * 9. export named exports as soon as they are declared
  */
 
 export const availableAirplanes = [
@@ -118,7 +118,7 @@ export function meetsSpeedRangeRequirements(
 }
 
 /**
- * export as
+ * 11. export as
  */
 
 export {
@@ -129,7 +129,7 @@ export {
 }
 
 /**
- * combining export statements
+ * 13. combining export statements
  */
 
 export const bla = ' aaaa'

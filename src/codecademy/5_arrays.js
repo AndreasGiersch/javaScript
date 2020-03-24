@@ -1,162 +1,184 @@
 function arrays() {
-	// creating and logging
+    /**
+     * 2. Creating arrays
+     */
 
-	const hobbies = ['one', 'two', 'three'];
-	console.log(hobbies);
+    const hobbies = ['one', 'two', 'three']
+    console.log(hobbies)
 
-	// Acessing elements
+    /**
+     * 3. Accessing elements
+     */
 
-	const famousSayings = [
-		'Fortune favors the brave.',
-		'A joke is a very serious thing.',
-		'Where there is love there is life.'
-	];
+    const famousSayings = [
+        'Fortune favors the brave.',
+        'A joke is a very serious thing.',
+        'Where there is love there is life.',
+    ]
 
-	const listItem = famousSayings[0];
-	console.log(listItem);
-	console.log(famousSayings[2]);
-	console.log(famousSayings[3]);
+    const listItem = famousSayings[0]
+    console.log(listItem)
+    console.log(famousSayings[2])
+    console.log(famousSayings[3])
 
-	const testString = 'Kraubio';
+    const testString = 'Kraubio'
 
-	console.log(testString[2] === 'a' ? 'Yes' : 'fail');
+    console.log(testString[2] === 'a' ? 'Yes' : 'fail')
 
-	// updating elements
+    /**
+     * 4. Updating elements
+     */
 
-	let ingredients = ['bread', 'tomatoes', 'milk'];
+    let ingredients = ['bread', 'tomatoes', 'milk']
 
-	ingredients[1] = 'avocados';
+    ingredients[1] = 'avocados'
 
-	// arrays with let and const
+    /**
+     * 5. Arrays with let and const
+     */
 
-	let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
+    let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha']
 
-	const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
+    const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork']
 
-	condiments[0] = 'Mayo';
+    condiments[0] = 'Mayo'
 
-	console.log(condiments);
+    console.log(condiments)
 
-	condiments = ['Mayo'];
+    condiments = ['Mayo']
 
-	console.log(condiments);
+    console.log(condiments)
 
-	utensils[3] = 'Spoon';
+    utensils[3] = 'Spoon'
 
-	console.log(utensils);
+    console.log(utensils)
 
-	// length property
+    /**
+     * 6. The length prop
+     */
 
-	const objectives = [
-		'Learn a new languages',
-		'Read 52 books',
-		'Run a marathon'
-	];
-	console.log(objectives.length);
+    const objectives = [
+        'Learn a new languages',
+        'Read 52 books',
+        'Run a marathon',
+    ]
+    console.log(objectives.length)
 
-	// push() method
+    /**
+     * 7. The push() method
+     */
 
-	const chores = ['wash dishes', 'do laundry', 'take out trash'];
+    const chores = ['wash dishes', 'do laundry', 'take out trash']
 
-	chores.push('feed baby', 'walk the dog');
+    chores.push('feed baby', 'walk the dog')
 
-	console.log(chores);
+    console.log(chores)
 
-	console.log(chores.push('blabla chore'));
+    console.log(chores.push('blabla chore'))
 
-	// pop() method
+    /**
+     * 8. The pop() method
+     */
 
-	const tasks = [
-		'wash dishes',
-		'do laundry',
-		'take out trash',
-		'cook dinner',
-		'mop floor'
-	];
+    const tasks = [
+        'wash dishes',
+        'do laundry',
+        'take out trash',
+        'cook dinner',
+        'mop floor',
+    ]
 
-	tasks.pop();
+    tasks.pop()
 
-	console.log(tasks);
+    console.log(tasks)
 
-	console.log(tasks.pop());
+    console.log(tasks.pop())
 
-	// more array methods
+    /**
+     * 9. More array methods
+     */
 
-	const groceryList = [
-		'orange juice',
-		'bananas',
-		'coffee beans',
-		'brown rice',
-		'pasta',
-		'coconut oil',
-		'plantains'
-	];
+    const groceryList = [
+        'orange juice',
+        'bananas',
+        'coffee beans',
+        'brown rice',
+        'pasta',
+        'coconut oil',
+        'plantains',
+    ]
 
-	groceryList.shift();
-	console.log(groceryList);
+    groceryList.shift()
+    console.log(groceryList)
 
-	groceryList.unshift('popcorn');
-	console.log(groceryList);
+    groceryList.unshift('popcorn')
+    console.log(groceryList)
 
-	console.log(groceryList.slice(1, 4));
-	console.log(groceryList);
+    console.log(groceryList.slice(1, 4))
+    console.log(groceryList)
 
-	const pastaIndex = groceryList.indexOf('pasta');
-	console.log(pastaIndex);
+    const pastaIndex = groceryList.indexOf('pasta')
+    console.log(pastaIndex)
 
-	// arrays and functions
+    /**
+     * 10. Arrays and functions
+     */
 
-	const concept = ['arrays', 'can', 'be', 'mutated'];
+    const concept = ['arrays', 'can', 'be', 'mutated']
 
-	function changeArr(arr) {
-		arr[3] = 'MUTATED';
-	}
+    function changeArr(arr) {
+        arr[3] = 'MUTATED'
+    }
 
-	changeArr(concept);
-	console.log(concept);
+    changeArr(concept)
+    console.log(concept)
 
-	function removeElement(newArr) {
-		newArr.pop();
-	}
+    function removeElement(newArr) {
+        newArr.pop()
+    }
 
-	removeElement(concept);
+    removeElement(concept)
 
-	console.log(concept);
+    console.log(concept)
 
-	// nested arrays
+    /**
+     * 11. Nested Arrays
+     */
 
-	const numberClusters = [
-		[1, 2],
-		[3, 4],
-		[5, 6]
-	];
-	const target = numberClusters[2][1];
-	console.log(target);
+    const numberClusters = [
+        [1, 2],
+        [3, 4],
+        [5, 6],
+    ]
+    const target = numberClusters[2][1]
+    console.log(target)
 
-	// review
+    /**
+     * 12. Review
+     */
 
-	const test = [1, 2, 3, 4, 5, 6, 7];
-	const lastEl = test[test.length - 1];
-	console.log(lastEl);
+    const test = [1, 2, 3, 4, 5, 6, 7]
+    const lastEl = test[test.length - 1]
+    console.log(lastEl)
 
-	const textArr = ['test', 'test1', 'test2'];
-	let arrString = '';
+    const textArr = ['test', 'test1', 'test2']
+    let arrString = ''
 
-	textArr.forEach(element => (arrString += element));
-	console.log(arrString);
+    textArr.forEach(element => (arrString += element))
+    console.log(arrString)
 
-	console.log(textArr.push(12));
-	const pushReturn = textArr.push(1000);
-	console.log('push returns ' + pushReturn);
+    console.log(textArr.push(12))
+    const pushReturn = textArr.push(1000)
+    console.log('push returns ' + pushReturn)
 
-	const nestArray = [
-		['a', 'b'],
-		[1, 2],
-		[true, false]
-	];
-	console.log(
-		nestArray[0][1] + ' is ' + nestArray[1][1] + ' ' + nestArray[2][0]
-	);
+    const nestArray = [
+        ['a', 'b'],
+        [1, 2],
+        [true, false],
+    ]
+    console.log(
+        nestArray[0][1] + ' is ' + nestArray[1][1] + ' ' + nestArray[2][0]
+    )
 }
 
-arrays();
+arrays()

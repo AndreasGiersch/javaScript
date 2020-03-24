@@ -1,7 +1,7 @@
 import AirplaneExp from './11_modules'
 
 /**
- * require modules
+ * 3. require modules
  */
 
 const Airplane = require('./11_modules.js')
@@ -16,7 +16,7 @@ function displayAirplane() {
 // displayAirplane()
 
 /**
- * require modules II
+ * 4. require modules II
  */
 
 const Airplane2 = require('./11_modules.js')
@@ -24,7 +24,7 @@ const Airplane2 = require('./11_modules.js')
 // console.log(Airplane2.displayAirplane())
 
 /**
- * import
+ * 6. import
  */
 
 function displayFuelCapacity() {
@@ -37,7 +37,7 @@ function displayFuelCapacity() {
 // displayFuelCapacity()
 
 /**
- * named imports
+ * 8. named imports
  */
 
 // import {
@@ -62,7 +62,7 @@ function displayStaffStatus() {
 // displayStaffStatus()
 
 /**
- * import named imports
+ * 10. import named imports
  */
 
 import {
@@ -89,7 +89,7 @@ function displaySpeedRangeStatus() {
 // displaySpeedRangeStatus()
 
 /**
- * import the "export as" exports
+ * 12. import the "export as" exports
  */
 
 // only need to change the used imports to the alias:
@@ -98,7 +98,7 @@ function displaySpeedRangeStatus() {
 // aircrafts.forEach(...
 
 /**
- * combining import statements
+ * 14. combining import statements
  */
 
 import { bla, blaa } from './11_modules'

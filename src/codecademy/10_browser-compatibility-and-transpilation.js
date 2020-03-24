@@ -1,12 +1,12 @@
 function browserComp() {
     /**
-     * caniuse: website to research, which functionality is supported by which browsers
+     * 2., 3. caniuse: website to research, which functionality is supported by which browsers
      * e.g. search for "template literals" to find out, that about 95% of all browsers accept it
      *
      */
 
     /**
-     * convert ES6 syntax to ES5 syntax manually
+     * 4. convert ES6 syntax to ES5 syntax manually
      */
 
     var pasta = 'Spaghetti' // ES5 syntax
@@ -38,7 +38,7 @@ function browserComp() {
     console.log(carbonara1)
 
     /**
-     * transpilation: babel is a transpiler, which can convert newer ECMAscript version, like ES6,
+     * 5. transpilation: babel is a transpiler, which can convert newer ECMAscript version, like ES6,
      * to older versions. E.g. it converts ES6 javascript syntax to ES5 javascript syntax,
      * to raise the browser compatibility
      */
@@ -56,7 +56,7 @@ function browserComp() {
     // You may need to refresh to see the newly created lib directory.
 
     /**
-     * npm init
+     * 6. npm init
      */
 
     // In the last exercise, you wrote one command in your terminal to transpile ES6 code to ES5. In the next five exercises you will learn how to setup a JavaScript project that transpiles code when you run npm run build from the root directory of a JavaScript project.
@@ -92,7 +92,7 @@ function browserComp() {
     // npm adds the package.json file to the same level as the src directory.
 
     /**
-     * install node packages
+     * 7. install node packages
      */
 
     // "npm install babel-cli"
@@ -102,7 +102,7 @@ function browserComp() {
     // This installs the second of two required Babel packages.
 
     /**
-     * .babelrc config
+     * 8. .babelrc config
      */
 
     // Now that you’ve downloaded the Babel packages, you need to specify the version of the source JavaScript code.
@@ -131,13 +131,13 @@ function browserComp() {
     // When you run Babel, it looks in .babelrc to determine the version of the initial JavaScript file. In this case, ["env"] instructs Babel to transpile any code from versions ES6 and later.
 
     /**
-     * babel source lib
+     * 9. babel source lib
      */
 
     //  add ' "build": "babel src -d lib" ' to the scripts in package.json
 
     /**
-     * build
+     * 10. build
      */
 
     // now running "npm run build" to use babel for transpiling all ES6 and upwards syntax
@@ -147,7 +147,7 @@ function browserComp() {
     // "npm install --save-dev @babel/preset-typescript" should be needed
 
     /**
-     * review
+     * 11. review
      */
 
     // Initialize your project using npm init and create a directory called src
